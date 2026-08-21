@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Latproppadding extends StatelessWidget {
-  const Latproppadding({super.key});
+class LatPropertyPadding extends StatelessWidget {
+  const LatPropertyPadding({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

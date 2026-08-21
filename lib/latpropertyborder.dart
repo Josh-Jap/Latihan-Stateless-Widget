@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Latpropertyborder extends StatelessWidget {
-  const Latpropertyborder({super.key});
+class LatPropertyBorder extends StatelessWidget {
+  const LatPropertyBorder({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

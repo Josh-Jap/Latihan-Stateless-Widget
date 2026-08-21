@@ -11,11 +11,13 @@ import 'package:flutter/material.dart';
 // import 'latcolumn.dart';
 // import 'latstack.dart';
 // import 'latlistview.dart';
-import 'latgridview.dart';
+// import 'latgridview.dart';
 // import 'latcontainer.dart';
-// import 'latpadding.dart';
-// import 'latmargin.dart';
+// import 'latproppadding.dart';
+// import 'Latpromargin.dart';
 // import 'latcard.dart';
+// import 'latborderrads.dart';
+// import 'latprocolor.dart';
 
 
 void main() {
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const Latgridview(),
+      home: const Latcard(),
     );
   }
 }

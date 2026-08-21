@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Latcard extends StatelessWidget {
-  const Latcard({Key? key}) : super(key: key);
+  const Latcard ({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
