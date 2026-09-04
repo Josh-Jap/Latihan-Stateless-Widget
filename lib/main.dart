@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 // import 'lattext.dart';
 // import 'latimage.dart';
 // import 'latbutton.dart';
-// import 'latscaffold.dart';
+import 'dash.dart';
 // import 'latdialog.dart';
 // import 'latpropertyborder.dart';
 // import 'latboxshadows.dart';
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const Latcard(),
+      home: const Dash(),
     );
   }
 }
