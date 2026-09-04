@@ -23,228 +23,226 @@ class Dash extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Lattext()),
-              );
-            },
-            child: const Text("Text Widget"),
-          ),
-        ),
-        const SizedBox(height:8),
-        Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Latimage()),
-              );
-            },
-            child: const Text("Image Widget"),
-          ),
-        ),
-        const SizedBox(height:8),
-        Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Latbutton()),
-              );
-            },
-            child: const Text("Button Widget"),
-          ),
-        ),
-        const SizedBox(height:8),
-        Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Latscaffold()),
-              );
-            },
-            child: const Text("Scaffold Widget"),
-          ),
-        ),
-        const SizedBox(height:8),
-        Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Latdialog()),
-              );
-            },
-            child: const Text("Dialog Widget"),
-          ),
-        ),
-        const SizedBox(height:8),
-        Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const LatPropertyBorder(),
-                ),
-              );
-            },
-            child: const Text("Property Border Widget"),
-          ),
-        ),
-        const SizedBox(height:8),
-        Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const latboxshadows()),
-              );
-            },
-            child: const Text("Boxshadow widget"),
-          ),
-        ),
-        const SizedBox(height:8),
-        Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const lattransform()),
-              );
-            },
-            child: const Text("Transform Widget"),
-          ),
-        ),
-        const SizedBox(height:8),
-        Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const latrow()),
-              );
-            },
-            child: const Text("widget row"),
-          ),
-        ),
-        const SizedBox(height:8),
-        Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const latcolumn()),
-              );
-            },
-            child: const Text("Widget Column"),
-          ),
-        ),
-        const SizedBox(height:8),
-        Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const latstack()),
-              );
-            },
-            child: const Text("Widget Stack"),
-          ),
-        ),
-        const SizedBox(height:8),
-        Center(
-        child:ElevatedButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Latlistview()),
-            );
-          },
-          child: const Text("widget listview"),
-        ),
-        ),
-        const SizedBox(height:8),
-        Center(
-        child:ElevatedButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Latgridview()),
-            );
-          },
-          child: const Text("Grid view Widget"),
-        ),
-        ),
-        const SizedBox(height:8),
-        Center(
-        child:ElevatedButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const LatPropertyPadding(),
+    return SingleChildScrollView(
+      padding: const EdgeInsets.symmetric(vertical: 16),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          // BARIS 1
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Latimage()),
+                  );
+                },
+                child: const Text("Image Widget"),
               ),
-            );
-          },
-          child: const Text("Property Padding Widget"),
-        ),
-        ),
-        const SizedBox(height:8),
-        Center(
-        child:ElevatedButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Latpromargin()),
-            );
-          },
-          child: const Text("Property Margin Widget"),
-        ),
-        ),
-        const SizedBox(height:8),
-        Center(
-        child:ElevatedButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Latcard()),
-            );
-          },
-          child: const Text("Card Widget"),
-        ),
-        ),
-        const SizedBox(height:8),
-        Center(
-        child:ElevatedButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Latborderrads()),
-            );
-          },
-          child: const Text("Border RAdius Widget"),
-        ),
-        ),
-        const SizedBox(height:8),
-        Center(
-        child:ElevatedButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Latprocolor()),
-            );
-          },
-          child: const Text("Property Color WIdget"),
-        ),
-        ),
-      ],
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Lattext()),
+                  );
+                },
+                child: const Text("Text Widget"),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Latbutton()),
+                  );
+                },
+                child: const Text("Button Widget"),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Latscaffold(),
+                    ),
+                  );
+                },
+                child: const Text("Scaffold Widget"),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Latdialog()),
+                  );
+                },
+                child: const Text("Dialog Widget"),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const LatPropertyBorder(),
+                    ),
+                  );
+                },
+                child: const Text("Property Border Widget"),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const latboxshadows(),
+                    ),
+                  );
+                },
+                child: const Text("Boxshadow Widget"),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const lattransform(),
+                    ),
+                  );
+                },
+                child: const Text("Transform Widget"),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const latrow()),
+                  );
+                },
+                child: const Text("Widget Row"),
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 12),
+
+          // BARIS 2
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const latcolumn()),
+                  );
+                },
+                child: const Text("Widget Column"),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const latstack()),
+                  );
+                },
+                child: const Text("Widget Stack"),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Latlistview(),
+                    ),
+                  );
+                },
+                child: const Text("Widget ListView"),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Latgridview(),
+                    ),
+                  );
+                },
+                child: const Text("Widget GridView"),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const LatPropertyPadding(),
+                    ),
+                  );
+                },
+                child: const Text("Property Padding Widget"),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Latpromargin(),
+                    ),
+                  );
+                },
+                child: const Text("Property Margin Widget"),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Latcard()),
+                  );
+                },
+                child: const Text("Card Widget"),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Latborderrads(),
+                    ),
+                  );
+                },
+                child: const Text("Border Radius Widget"),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Latprocolor(),
+                    ),
+                  );
+                },
+                child: const Text("Property Color Widget"),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
