@@ -23,12 +23,9 @@ class Dash extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      padding: const EdgeInsets.symmetric(vertical: 16),
-      child: Column(
+    return Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          // BARIS 1
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
@@ -242,7 +239,6 @@ class Dash extends StatelessWidget {
             ],
           ),
         ],
-      ),
-    );
+      );
   }
 }
